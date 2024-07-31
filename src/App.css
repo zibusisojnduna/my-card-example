@@ -10,7 +10,7 @@ body{
 
 .div1{
   background-color: red;
-  height: 15cm;
+  height: 12cm;
   width: 9cm;
   align-items: center;
   position: absolute;
@@ -36,18 +36,20 @@ body{
 .div3{
   height: 3cm;
   width: 9cm;
+  border-bottom: solid gray 0.01cm;
 }
 
 .div4{
   background-color: white;
-  height: 2cm;
+  height: 1cm;
   width: 9cm;
   display: flex;
+  border-bottom: solid gray 0.01cm;
 }
 
 .div5{
   background-color: orange;
-  height: 3cm;
+  height: 2.5cm;
   width: 9cm;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
@@ -72,4 +74,21 @@ body{
   fill: gray;
   height: .5cm;
   width: .5cm;
+}
+
+#tub{
+  fill: gray;
+  margin-left: 1cm;
+  height: .5cm;
+  width: .5cm;
+}
+
+#profile{
+  border-radius: 50%;
+  height: 1cm;
+  width: 1cm;
+}
+
+.info{
+  display: flex;
 }

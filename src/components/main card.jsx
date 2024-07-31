@@ -1,4 +1,5 @@
 import { MdOutlineBedroomParent } from "react-icons/md";
+import { LiaHotTubSolid } from "react-icons/lia";
 
 function Div(){
 
@@ -12,8 +13,19 @@ function Div(){
             </div>
             <div className='div4'>
             <MdOutlineBedroomParent id="bedroom"/><h3>3</h3><h3 style={{color:"gray"}}>Bedrooms</h3><br></br>
+            <LiaHotTubSolid id="tub"/><h3>2</h3><h3 style={{color:"gray"}}>Bathrooms</h3>
             </div>
-            <div className='div5'>dd</div>
+            <div className='div5'>
+                <p style={{color:"gray"}}>REALATOR</p><br></br>
+                <section className="info">
+                    <img id="profile" src=".\src\assets\profile.jpg"></img>
+                    <h1>Dana Smith<br></br><p style={{color:"gray", fontSize:"small"}}>(+27) 67 845-2345</p></h1>
+                    
+                    
+                
+                </section>
+                
+            </div>
         </div>
     )
 }
