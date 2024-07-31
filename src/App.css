@@ -20,7 +20,7 @@ body{
   right: 0;
   margin: auto;
   border-radius: 15%;
-  box-shadow: 4cm 4cm 4cm 4cm rgba(0, 0, 0, 0.2), 6cm 6cm 6cm 6cm rgba(0, 0, 0, 0.19);
+  box-shadow: 0cm 0cm 0.5cm 0.5cm rgba(0, 0, 0, 0.2), 0cm 0cm 0cm 0cm rgba(0, 0, 0, 0.19);
 }
 
 .div2{
@@ -29,7 +29,7 @@ body{
   width: 9cm;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
-  background-image: url("./src/assets/frames-for-your-heart-2d4lAQAlbDA-unsplash 2 .jpg");
+  background-image: url("./src/assets/house.jpg");
 
 }
 
