@@ -19,7 +19,7 @@ body{
   left: 0;
   right: 0;
   margin: auto;
-  border-radius: 15%;
+  border-radius: 3%;
   box-shadow: 0cm 0cm 0.5cm 0.5cm rgba(0, 0, 0, 0.2), 0cm 0cm 0cm 0cm rgba(0, 0, 0, 0.19);
 }
 
@@ -27,30 +27,30 @@ body{
   background-color: blue;
   height: 6cm;
   width: 9cm;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 
 
 }
 
 .div3{
-  background-color: black;
   height: 3cm;
   width: 9cm;
 }
 
 .div4{
   background-color: white;
-  height: 3cm;
+  height: 2cm;
   width: 9cm;
+  display: flex;
 }
 
 .div5{
   background-color: orange;
   height: 3cm;
   width: 9cm;
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
 }
 
 #root{
@@ -66,4 +66,10 @@ body{
 
 #heart{
   color: red;
+}
+
+#bedroom{
+  fill: gray;
+  height: .5cm;
+  width: .5cm;
 }
