@@ -5,14 +5,13 @@ import './App.css'
 import Div from './components/main card'
 
 
-
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <Div>
-      
+        
       </Div>
     </>
   )

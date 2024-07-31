@@ -29,7 +29,7 @@ body{
   width: 9cm;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
-  background-image: url("./src/assets/house.jpg");
+
 
 }
 
@@ -62,4 +62,8 @@ body{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+}
+
+#heart{
+  color: red;
 }
