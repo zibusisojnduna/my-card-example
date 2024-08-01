@@ -68,11 +68,23 @@ let housesForSale = [
   numberOfBathrooms : 2,
   nameOfRealtor : "Isabell West",
   numberOfRealtor: "+24 33 109 6712",
+  },
+
+  {
+  id : 4,
+  image:"./src/assets/lodge.jpg",
+  typeOfHouse : "Forrest Cabin",
+  ageOfHouse : 2,
+  priceOfHouse : "$500,000",
+  addressOfHouse : "991 Shawbrook Pass",
+  numberOfBedrooms : 6,
+  numberOfBathrooms : 3,
+  nameOfRealtor : "Paula Ganon",
+  numberOfRealtor: "+41 65 091 3311",
   }
 ]
 
 
-  // localStorage.setItem();
 
   return (
     <>
@@ -81,6 +93,7 @@ let housesForSale = [
       <Div accommodation={housesForSale[0]}/>
       <Div accommodation={housesForSale[1]}/>
       <Div accommodation={housesForSale[2]}/>
+      <Div accommodation={housesForSale[3]}/>
     </section>
       
       
