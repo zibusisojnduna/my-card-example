@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Div from './components/main card'
+import StateVariable from './components/statevariable'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,13 +17,17 @@ const game ={
   available : true,
 }
 
-  localStorage.setItem(game, {});
+
+
+  // localStorage.setItem();
 
   return (
     <>
       <Div>
         
       </Div>
+
+      <StateVariable></StateVariable>
     </>
   )
 }
