@@ -1,4 +1,4 @@
-import { useState } from "react"
+// import { useState } from "react"
 
 function StateVariable(){
     let count = 0
@@ -9,13 +9,17 @@ function StateVariable(){
 
     SetCount()
 
-    const [list,setlist] = useState (0)
+    const [list, setlist] = useState (false)
 
     // list = ["Tom", "Jerry", "Paul"]
 
     function ChnageList(){
         if(list){
-            setlist()
+            setlist[list]
+            
+        }
+        if(!list){
+            setlist
         }
     }
 
@@ -23,4 +27,4 @@ function StateVariable(){
         <div style={{backgroundColor:"green"}}><p>hi</p></div>
     )
 }
-export default StateVariable
+// export default StateVariable
