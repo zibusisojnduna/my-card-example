@@ -88,15 +88,15 @@ let housesForSale = [
 
   {
   id : 5,
-  image:"./src/assets/lodge.jpg",
-  typeOfHouse : "Forrest Cabin",
-  ageOfHouse : 2,
-  priceOfHouse : "$500,000",
-  addressOfHouse : "991 Shawbrook Pass",
-  numberOfBedrooms : 6,
-  numberOfBathrooms : 3,
-  nameOfRealtor : "Paula Ganon",
-  numberOfRealtor: "+41 65 091 3311",
+  image:"./src/assets/mansion.jpg",
+  typeOfHouse : "Venitian Mansion",
+  ageOfHouse : 30,
+  priceOfHouse : "$2,250,000",
+  addressOfHouse : "32 Belmont Road",
+  numberOfBedrooms : 8,
+  numberOfBathrooms : 4,
+  nameOfRealtor : "Mariana Campos",
+  numberOfRealtor: "+39 33 214 8765",
   }
 ]
 
@@ -106,7 +106,10 @@ function Add(){
 
   console.log("Here are the available houses.", sale);
 
+  localStorage.setItem("housesForSale", JSON.stringify(housesForSale))
+
 }
+
 
 
   return (
