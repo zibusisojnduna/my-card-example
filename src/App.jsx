@@ -7,7 +7,29 @@ import { jsx } from 'react/jsx-runtime'
 // import StateVariable from './components/statevariable'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [homes, setHomes ] = useState([])
+
+  const HouseManager = (newHome) => {
+    setHomes([...homes, newHome]);
+  };
+
+  const readHomes = () => {
+    return housesForSale;
+  };
+
+  const updateHome = (index, updateHome)=>{
+    const updateHomes =housesForSale.map((homes, i) =>
+      i === index ? updateHome : housesForSale
+  )
+  
+  setHomes(updateHomes);
+}
+
+const deleteHome = (index) => {
+  const updateHomes = housesForSale.filter((_, i) => i !== index);
+  setHomes(updateHomes)
+}
+
 
 const game ={
   title : "Uncharted 2:Among Thieves",
@@ -89,34 +111,7 @@ let sale = localStorage.getItem("housesForSale")
 console.log("These are the available houses.", sale)
 
 
-function Add(housesForSale, housesForSale ){
-  sale = JSON.stringify(housesForSale)
-  localStorage.setItem("housesForSale", JSON.stringify(housesForSale))
 
-}
-
-function Read(housesForSale){
-  localStorage.getItem("housesForSale", housesForSale)
-  if(sale){
-    return JSON.parse(sale)
-  }
-}
-
-function Update(housesForSale){
-localStorage.setItem()
-if(sale){
-  sale = JSON.parse(sale)
-  const updatedData = {...sale, ...newValue}
-  localStorage.setItem("housesForSale", housesForSale);
-  
-}else{
-  console.log("Data not found")
-}
-}
-
-function Delete(housesForSale){
-  localStorage.removeItem("housesForSale")
-}
 
   return (
     <>
