@@ -9,26 +9,6 @@ import { jsx } from 'react/jsx-runtime'
 function App() {
   const [homes, setHomes ] = useState([])
 
-  const HouseManager = (newHome) => {
-    setHomes([...homes, newHome]);
-  };
-
-  const readHomes = () => {
-    return housesForSale;
-  };
-
-  const updateHome = (index, updateHome)=>{
-    const updateHomes =housesForSale.map((homes, i) =>
-      i === index ? updateHome : housesForSale
-  )
-  
-  setHomes(updateHomes);
-}
-
-const deleteHome = (index) => {
-  const updateHomes = housesForSale.filter((_, i) => i !== index);
-  setHomes(updateHomes)
-}
 
 
 const game ={
@@ -104,13 +84,29 @@ let housesForSale = [
   numberOfBathrooms : 3,
   nameOfRealtor : "Paula Ganon",
   numberOfRealtor: "+41 65 091 3311",
+  },
+
+  {
+  id : 5,
+  image:"./src/assets/lodge.jpg",
+  typeOfHouse : "Forrest Cabin",
+  ageOfHouse : 2,
+  priceOfHouse : "$500,000",
+  addressOfHouse : "991 Shawbrook Pass",
+  numberOfBedrooms : 6,
+  numberOfBathrooms : 3,
+  nameOfRealtor : "Paula Ganon",
+  numberOfRealtor: "+41 65 091 3311",
   }
 ]
 
-let sale = localStorage.getItem("housesForSale")
-console.log("These are the available houses.", sale)
 
+function Add(){
+  let sale = localStorage.getItem("housesForSale");
 
+  console.log("Here are the available houses.", sale);
+
+}
 
 
   return (
