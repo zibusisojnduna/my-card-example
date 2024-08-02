@@ -86,29 +86,33 @@ let housesForSale = [
   numberOfRealtor: "+41 65 091 3311",
   },
 
-  {
-  id : 5,
-  image:"./src/assets/mansion.jpg",
-  typeOfHouse : "Venitian Mansion",
-  ageOfHouse : 30,
-  priceOfHouse : "$2,250,000",
-  addressOfHouse : "32 Belmont Road",
-  numberOfBedrooms : 8,
-  numberOfBathrooms : 4,
-  nameOfRealtor : "Mariana Campos",
-  numberOfRealtor: "+39 33 214 8765",
-  }
+  
 ]
 
 
-function Add(){
-  let sale = localStorage.getItem("housesForSale");
+function Create(){
+ localStorage.getItem("housesForSale");
 
-  console.log("Here are the available houses.", sale);
+ housesForSale.push(
+  id , 5,
+  image,"./src/assets/mansion.jpg",
+  typeOfHouse ,"Venitian Mansion",
+  ageOfHouse , 30,
+  priceOfHouse , "$1.2 Million",
+  addressOfHouse , "32 Belmont Street",
+  numberOfBedrooms , 8,
+  numberOfBathrooms , 4,
+  nameOfRealtor , "Sally Fields",
+  numberOfRealtor,"+29 80 342 0937",
+ );
 
-  localStorage.setItem("housesForSale", JSON.stringify(housesForSale))
+ localStorage.setItem("housesForSale", JSON.stringify(housesForSale))
 
 }
+
+ 
+
+
 
 
 
@@ -120,6 +124,7 @@ function Add(){
       <Div accommodation={housesForSale[1]}/>
       <Div accommodation={housesForSale[2]}/>
       <Div accommodation={housesForSale[3]}/>
+     
     </section>
       
       

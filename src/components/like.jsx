@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 
-let iconColor = "red"
+let iconColor = "white"
 
 
 function Icon(){
