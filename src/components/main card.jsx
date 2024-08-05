@@ -2,9 +2,10 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { LiaHotTubSolid } from "react-icons/lia";
 import { CiHeart } from "react-icons/ci";
 import Icon from "./like";
+import Add from "./addbook";
 
 function Div({accommodation}){
-  console.log(accommodation)
+//   console.log(accommodation)
 
     return(
         

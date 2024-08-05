@@ -5,6 +5,9 @@ import './App.css'
 import Div from './components/main card'
 import { jsx } from 'react/jsx-runtime'
 // import StateVariable from './components/statevariable'
+import Testing from './components/testing_functions'
+import Add from './components/addbook'
+import Read from './components/displayBook'
 
 function App() {
   const [homes, setHomes ] = useState([])
@@ -90,31 +93,64 @@ let housesForSale = [
 ]
 
 
-function Create(){
- localStorage.getItem("housesForSale");
 
- housesForSale.push(
-  id , 5,
-  image,"./src/assets/mansion.jpg",
-  typeOfHouse ,"Venitian Mansion",
-  ageOfHouse , 30,
-  priceOfHouse , "$1.2 Million",
-  addressOfHouse , "32 Belmont Street",
-  numberOfBedrooms , 8,
-  numberOfBathrooms , 4,
-  nameOfRealtor , "Sally Fields",
-  numberOfRealtor,"+29 80 342 0937",
- );
-
- localStorage.setItem("housesForSale", JSON.stringify(housesForSale))
-
+let newHouse = {
+  id : 5,
+  image:"./src/assets/lodge.jpg",
+  typeOfHouse : "Forrest Cabin",
+  ageOfHouse : 2,
+  priceOfHouse : "$500,000",
+  addressOfHouse : "991 Shawbrook Pass",
+  numberOfBedrooms : 6,
+  numberOfBathrooms : 3,
+  nameOfRealtor : "Paula Ganon",
+  numberOfRealtor: "+41 65 091 3311"
 }
 
- 
+let bookTable = [
+    {
+      isbn:"978-3-16-148410-0",
+      title:"Cherub:Divine Madness",
+      no_of_pages:297,
+      edition:"1st",
+      publisher:"Penguin Books",
+      price: "$19.99",
+      designer:"./src/assets/Divine_Madness_cover.jpg",
+      release_date:"23/09/2003",
+    },
 
+    {
+      isbn:"891-4-56-761321-1",
+      title:"Lord of the Rings",
+      no_of_pages:1121,
+      edition:"3rd",
+      publisher:"Penguin Books",
+      price:"$29.99",
+      designer:"./src/assets/lotr.jpg",
+      release_date:"01/04/1999",
+    },
 
+    {
+      isbn:"567-4-90-187419-2",
+      title:"H.I.V.E:Dreadnought",
+      no_of_pages:237,
+      edition:"1st",
+      publisher:"Macmillan Books",
+      price:"$19.99",
+      designer:"./src/assets/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
+      release_date:"30/01/2011",
+    }
+  ]
 
+localStorage.setItem("bookTable", JSON.stringify(bookTable))
 
+  
+
+  let bookList =[
+    {
+
+    }
+  ]
 
   return (
     <>
@@ -124,6 +160,10 @@ function Create(){
       <Div accommodation={housesForSale[1]}/>
       <Div accommodation={housesForSale[2]}/>
       <Div accommodation={housesForSale[3]}/>
+
+      <Add book={bookList[0]}/>
+      <Read/>
+      
      
     </section>
       
