@@ -8,6 +8,8 @@ import { jsx } from 'react/jsx-runtime'
 import Testing from './components/testing_functions'
 import Add from './components/addbook'
 import Read from './components/displayBook'
+import Update from './components/updatebook'
+import Delete from './components/deletebook'
 
 function App() {
   const [homes, setHomes ] = useState([])
@@ -164,10 +166,15 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
       <Add book={bookList[0]}/>
       <Read/>
       
+      
      
     </section>
       
-      
+  <div className='buttons'>
+      <Update/>
+      <Delete/>
+  </div>
+  
         
       
 {/* 

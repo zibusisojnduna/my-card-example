@@ -106,3 +106,34 @@ background-color: white;
   display: flex;
 }
 
+.btn-1{
+  background-color: green;
+  cursor: pointer;
+  padding: 0.5cm;
+}
+
+.btn-1:hover{
+  background-color: white;
+  color: black;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.btn-2{
+  background-color: red;
+  cursor: pointer;
+  margin: 1cm;
+  padding: 0.5cm;
+}
+
+.btn-2:hover{
+  background-color: white;
+  color: black;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.buttons{
+  margin-top: 2cm;
+  margin-left: 18cm;
+}

@@ -1,3 +1,4 @@
+//This is the C in CRUD. This adds a new book to the list.
 function Add({book}){
   let myBooks = JSON.parse(localStorage.getItem("bookTable"))
 
